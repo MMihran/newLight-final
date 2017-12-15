@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Новый свет</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/selectize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      
+      <div class="menu-fix-mobile">
+        <div class="header-top-menu">
+          <div class="container">
+            <div class="col-md-12">
+              <ul class="pull-left f16 nav-links">
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости и статьи</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Контактная информация</a></li>
+              </ul>
+              <ul class="pull-right social-links">
+                <li><a href="#"><i class="fa fa-vk fa-vk-fix" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container header-top-wrap">
+          <div class="col-md-12">
+            <div class="header-top clearfix">
+              <div class="navbar-header">
+                <button type="button" class="btn-bar menu-toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <a class="navbar-brand" href="#">Новый свет</a><span class="f14 hidden-xs">Строительство домов в Крыму</span>
+              </div>
+            
+              <div class="nav navbar-nav navbar-right hidden-xs">
+                  <div class="btn-group">
+                    <button type="button" class="choose-city dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="city-name">Севастополь</span>
+                      <span class="city-phone f18">8 978 793 17 23</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <span class="city-name">Симферополь</span>
+                        <span class="city-phone f18">8 987 888 21 17</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="btn-prime f14 call-me call-me-toggle" data-target="#callMeModal">Перезвоните мне</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-fix">
+        <div class="header-bot clearfix hidden-xs">
+          <div class="container">
+            <div class="col-md-12">
+              <ul class="nav navbar-nav f16 megamenu">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Готовые проекты</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Проектирование</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Строительство</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отделочные работы</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Кровельные работы</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Галерея работ</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Информация</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="header-search">
+                <button type="button" class="search-btn"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></button>
+                <input type="text" name="" placeholder="Поиск по сайту">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li class="active"><a href="#">Проектирование</a></li>
+      </ul>
+    </div>
+
+
+    <section class="promo-wrap prime-content-wrapper gallery-items">
+      <div class="container">
+        <h2 class="title-h2">Галерея работ</h2>
+        <div class="tabs-wrap text-center">
+          <ul class="gallery-tabs">
+            <li class="active"><a href="#gallery-photo">Фото</a></li>
+            <li><a href="#gallery-video">Видео</a></li>
+          </ul>
+        </div>
+        <div class="gallery-photo gallery-tab visible" id="gallery-photo">
+          <div class="album-wrap">
+            <div class="album-top">
+              <h2 class="with-arr title-h2">
+                  <div class="proj-pagination same-line">
+                    <a href="#" class="proj-prev"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span> <span class="text">Предыдущий <br>проект</span></a>
+                    <a href="#" class="proj-next"><span class="text">Следующий <br>проект</span> <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                  </div>
+                  Строительство дома 275 м<sup>2</sup>
+              </h2>
+              <ul class="options f16">
+                <li><img src="img/album-ico1.png" alt="">г. Севастополь</li>
+                <li><img src="img/album-ico2.png" alt="">полистеролбетон</li>
+              </ul>
+            </div>
+            <hr class="prime-hr">
+            <div class="album-content">
+              <div class="album-item" data-index="1">
+                <a href="#" class="img-wrap"><img src="img/album1.jpg" alt=""></a>
+                <p>Установка ветрозащиты и обрешетки</p>
+              </div>
+              <div class="album-item" data-index="2">
+                <a href="#" class="img-wrap"><img src="img/album2.jpg" alt=""></a>
+                <p>Покрытие крыши плитами OSB</p>
+              </div>
+              <div class="album-item" data-index="3">
+                <a href="#" class="img-wrap"><img src="img/album3.jpg" alt=""></a>
+                <p>Монтаж кровли из гибкой черепицы</p>
+              </div>
+              <div class="album-item" data-index="4">
+                <a href="#" class="img-wrap"><img src="img/album4.jpg" alt=""></a>
+                <p>Утепление ската кровли внутри</p>
+              </div>
+              <div class="album-item" data-index="5">
+                <a href="#" class="img-wrap"><img src="img/album5.jpg" alt=""></a>
+                <p>Утепение фундамента и отмостки</p>
+              </div>
+              <div class="album-item" data-index="6">
+                <a href="#" class="img-wrap"><img src="img/album6.jpg" alt=""></a>
+                <p>Монтаж пластиковых окон с дополнительной защитой<br> от УФ-лучей</p>
+              </div>
+              <div class="album-item" data-index="7">
+                <a href="#" class="img-wrap" data-mobile-src="https://www.youtube.com/embed/heIp67XVwzo">
+                  <img src="img/album6.jpg" alt="">
+                  <span class="video-btn"><img src="img/play.png"></span>
+                </a>
+                <p>Монтаж пластиковых окон с дополнительной защитой<br> от УФ-лучей</p>
+              </div>
+              <div class="album-item" data-index="8">
+                <a href="#" class="img-wrap" data-mobile-src="https://www.youtube.com/embed/heIp67XVwzo">
+                  <img src="img/album6.jpg" alt="">
+                  <span class="video-btn"><img src="img/play.png"></span>
+                </a>
+                <p>Монтаж пластиковых окон с дополнительной защитой<br> от УФ-лучей</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </section>
+  
+   
+   
+    
+    
+    <section class="index-construction decor-construction">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <h2 class="title" style="margin-top: 0;">Посмотрите наши услуги</h2>
+            <p class="text f16">Наши специалисты создают специально для вас уникальное <a href="#">архитектурное решение</a>, которое отображает целиком<br> и полностью ваши представления об идеальном доме. Выбор проекта дома из бруса оптимален для тех, кто ценит практичность,<br> отдает предпочтение экологичным решениям и знает, как правильно распорядиться финансовыми средствами.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container slide-container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="const-slider">
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/construction_1.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Кровельные работы</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/construction_2.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Строительство индивидуальных домов</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/construction_3.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Строительство типовых домов</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/construction_4.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Строительство заборов</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/construction_5.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Бассейны</h3>
+                </div>
+              </div>
+            </div>
+            <div class="const-slide-paginator">
+              <ul>
+                  <li class="slide-arrow const-slide-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </li>
+                  <li class="slide-arrow const-slide-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-block" style="padding-bottom: 45px;">
+      <div class="container">
+        <div class="block-wrap">
+          <div class="info-top">
+            <div class="img-wrap">
+              <img src="img/book.png">
+            </div>
+            <p class="big-text"><b>Хотите сэкономить время и деньги?</b> Наша книга Вам поможет!</p>
+            <p class="text">Заполните форму и мы вышлем Вам книгу</p>
+          </div>
+          <div class="info-bot">
+            <p class="medium-text">«Как выбрать участок в Крыму» совершенно <b class="purple"><br>БЕСПЛАТНО</b>!</p>
+          </div>
+          <form>
+            <div class="form-wrap">
+              <input type="text" name="" placeholder="Ваше имя">
+              <input type="tel" name="" placeholder="Эл. почта">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+              <button class="info-btn">Получить книгу</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  
+
+
+    <footer class="footer">
+      <div class="container footer-top-wrap hidden-xs">
+        <div class="footer-top">
+          <ul class="pull-left f16 nav-links">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости и статьи</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Вопрос-ответ</a></li>
+            <li><a href="#">Полезная информация</a></li>
+            <li><a href="#">Контактная информация</a></li>
+          </ul>
+          <ul class="pull-right social-links">
+            <li><a href="#"><i class="fa fa-vk fa-vk-fix" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="prime-hr">
+      <div class="container">
+        <div class="footer-bot">
+          <div class="col-sm-3 working-time visible-lg">
+            <p class="f18">Офисы продаж работают:</p>
+            <ul class="f14">
+              <li>по будням с 9.30 до 18.00</li>
+              <li>в субботу с 10.00 до 16.00</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 city-data">
+            <span class="city-name f18">Севастополь</span>
+            <span class="city-phone f24">8 978 793 17 23</span>
+          </div>
+          <div class="col-lg-3 col-sm-6 city-data">
+            <span class="city-name f18">Симферополь</span>
+            <span class="city-phone f24">8 978 888 06 07</span>
+          </div>
+          <div class="col-sm-3 text-right visible-lg">
+            <button class="btn-prime get-consult">Получить консультацию</button>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="pull-left">Copyright 2017, ООО Строительная компания «Новый Свет»</p>
+          <p class="pull-right">Сделано <a href="#" class="dev-ico">SODA</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <div class="call-me-modal prime-modal modal fade" id="callMeModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <h2>Перезвоните мне</h2>
+            <div class="input-wrap">
+              <input type="text" name="" class="field" placeholder="Ваше имя">
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" class="field" placeholder="Номер телефона">
+            </div>
+            <div class="input-wrap prime-checkbox-wrap">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+            </div>
+            <button>Отправить</button>
+          </form>
+          <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="get-consult-modal prime-modal modal fade" id="getConsultModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <h2>Вам нужна подробная консультация?</h2>
+            <p class="text">Заполните форму, и наш специалист свяжется с вами в ближайшее время, чтобы ответить на интересующие вопросы</p>
+            <div class="input-wrap">
+              <input type="text" name="" class="field" placeholder="Ваше имя">
+            </div>
+            <div class="input-wrap">
+              <textarea name="" class="field" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" class="field" placeholder="Номер телефона">
+            </div>
+            <div class="input-wrap">
+              <input type="mail" name="" class="field" placeholder="Электронная почта">
+            </div>
+            <div class="input-wrap">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+            </div>
+            <button>Отправить</button>
+          </form>
+          <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+
+    <span id="back-to-top" href="#" class="btn back-to-top" data-placement="left"><i class="fa fa-angle-up"></i></span>
+    <span class="desktop_check-jquery visible-lg"></span>
+    <span class="tablet_check-jquery visible-sm visible-md"></span>
+    <span class="mobile_check-jquery visible-xs"></span>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <div class="album-modal modal fade" id="album-modal">
+       <div class="arrows">
+         <button class="slick-next slick-arrow"></button>
+         <button class="slick-prev slick-arrow"></button>
+       </div>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+           <div class="modal-slider">
+              <div class="img-wrap">
+                <div class="slider-item">
+                  <img src="img/album-big.jpg">
+                </div>
+                <div class="slider-item">
+                  <img src="img/album2.jpg">
+                </div>
+                <div class="slider-item">
+                  <img src="img/album3.jpg">
+                </div>
+                <div class="slider-item">
+                  <img src="img/album4.jpg">
+                </div>
+                <div class="slider-item">
+                  <img src="img/album5.jpg">
+                </div>
+                <div class="slider-item">
+                  <img src="img/album6.jpg">
+                </div>
+                <div class="slider-item">
+                   <div class="iframe-wrap">
+                     <iframe src="https://www.youtube.com/embed/heIp67XVwzo" frameborder="0" allowfullscreen></iframe>
+                   </div>
+                </div>
+                <div class="slider-item">
+                   <div class="iframe-wrap">
+                     <iframe src="https://www.youtube.com/embed/heIp67XVwzo" frameborder="0" allowfullscreen></iframe>
+                   </div>
+                </div>
+           </div>
+           </div>
+            <div class="album-top">
+              <h2>Строительство дома 275 м<sup>2</sup></h2>
+              <ul class="options f16">
+                <li><img src="img/album-ico1.png" alt="">г. Севастополь</li>
+                <li><img src="img/album-ico2.png" alt="">полистеролбетон</li>
+              </ul>
+            </div>
+          <button type="button" class="btn btn-default modal-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-modal modal fade" id="album-video-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="iframe-wrap">
+              <iframe src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          <button type="button" class="btn btn-default modal-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      $(document).ready(function(){
+        $(".promo-item .text-wrap").matchHeight();
+        $(".gallery-tabs a").click(function(e){
+          e.preventDefault();
+          var id = $(this).attr("href");
+          $(".gallery-tabs li").removeClass("active");
+          $(this).parent().addClass("active");
+          $(".gallery-tab").stop().fadeOut();
+          $(id).stop().fadeIn();
+        });
+
+        var albumSlick = 0;
+        var vidChk = false;
+        $("#album-modal .img-wrap").slick({
+            slidesToShow: 1,
+            fade: true,
+            nextArrow: ".album-modal .slick-next",
+            prevArrow: ".album-modal .slick-prev"
+        });
+        $("#album-modal .img-wrap").on("afterChange", function(event, slick, currentSlide, nextSlide){
+          if($(slick.$slides[currentSlide]).children(".iframe-wrap").hasClass("iframe-wrap")){
+            $("#album-modal .modal-slider").addClass("iframe-slide");
+          }else{
+            $("#album-modal .modal-slider").removeClass("iframe-slide");
+          }
+        });
+
+        $('#album-modal').on('show.bs.modal', function(e){
+            
+            $('#album-modal .img-wrap').slick('slickGoTo', albumSlick - 1);
+          setTimeout(function(){
+            $("#album-modal .img-wrap").get(0).slick.setPosition();
+          }, 200);
+
+        });
+        function albumShowChk(){
+          if ($(".mobile_check-jquery").is(":visible")) {
+              $(".album-wrap .img-wrap").off("click");
+          }else{
+            $(".album-wrap .img-wrap").on("click", function(e){
+              if($(this).children(".video-btn").hasClass("video-btn")){
+                videoChk=true;
+              }
+              albumSlick = $(this).parent().attr("data-index");
+              $('#album-modal').modal('show');
+
+            });
+          }
+        }
+        albumShowChk();
+        $('#album-modal').on('hide.bs.modal', function(e){
+          $('#album-modal iframe').each(function(e){
+              var src = $(this).attr("src");
+              $(this).attr("src", src);
+          });
+        });
+        function albumMobSlick(){
+          $(".album-content").slick({
+            responsive:[
+            {
+              breakpoint: 10000,
+              settings: "unslick",
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow:1,
+                dots:true,
+                adaptiveHeight:true,
+                arrows: false
+              }
+            }
+            ]
+          });
+        }
+
+        albumMobSlick();
+
+        function runSlider() {
+          if ($(".mobile_check-jquery").is(":visible") && !($(".album-content").hasClass("slick-initialized"))) {
+            albumMobSlick();
+          }
+        }
+
+        var albumTimeout;
+        $(window).resize(function(){
+          albumShowChk();
+          clearTimeout(albumTimeout);
+          albumTimeout = setTimeout(runSlider, 500);
+        });
+
+
+
+        $(".album-item .img-wrap").click(function(e){
+          e.preventDefault();
+          if ($(this).children(".video-btn").hasClass("video-btn") && $(".mobile_check-jquery").is(":visible") ) {
+              $("#album-video-modal iframe").attr("src", $(this).attr("data-mobile-src"));
+              $("#album-video-modal").modal('show');
+          }
+        });
+        $("#album-video-modal").on("hide.bs.modal", function(){
+          $("#album-video-modal iframe").attr("src", " "); 
+        })
+      });
+        
+    </script>
+  </body>
+</html>

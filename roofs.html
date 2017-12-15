@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>       
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Новый свет</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/selectize.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  </head> 
+  <body> 
+    <header class="header">
+      
+      <div class="menu-fix-mobile">
+        <div class="header-top-menu">
+          <div class="container">
+            <div class="col-md-12">
+              <ul class="pull-left f16 nav-links">
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости и статьи</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Контактная информация</a></li>
+              </ul>
+              <ul class="pull-right social-links">
+                <li><a href="#"><i class="fa fa-vk fa-vk-fix" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container header-top-wrap">
+          <div class="col-md-12">
+            <div class="header-top clearfix">
+              <div class="navbar-header">
+                <button type="button" class="btn-bar menu-toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <a class="navbar-brand" href="#">Новый свет</a><span class="f14 hidden-xs">Строительство домов в Крыму</span>
+              </div>
+            
+              <div class="nav navbar-nav navbar-right hidden-xs">
+                  <div class="btn-group">
+                    <button type="button" class="choose-city dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="city-name">Севастополь</span>
+                      <span class="city-phone f18">8 978 793 17 23</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <span class="city-name">Симферополь</span>
+                        <span class="city-phone f18">8 987 888 21 17</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="btn-prime f14 call-me call-me-toggle" data-target="#callMeModal">Перезвоните мне</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-fix">
+        <div class="header-bot clearfix hidden-xs">
+          <div class="container">
+            <div class="col-md-12">
+              <ul class="nav navbar-nav f16 megamenu">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Готовые проекты</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Проектирование</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Строительство</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отделочные работы</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Кровельные работы</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Галерея работ</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Информация</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="header-search">
+                <button type="button" class="search-btn"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></button>
+                <input type="text" name="" placeholder="Поиск по сайту">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li class="active"><a href="#">Проектирование</a></li>
+      </ul>
+    </div>
+
+
+    <section class="block-banner">
+      <div class="container">
+        <h2 class="banner-title title-h2">Скатные крыши</h2>
+        <div class="banner-pic-wrap" style="background-image: url(../img/roofs_banner.jpg);">
+          <div class="center-fix">
+            <div class="text-box">
+              <p class="text-box-head">Платите только за строительство <br>вашего дома</p>
+              <p class="f18 hidden-xs">При условии заключения договора на строительство мы возвращаем вам до 100 % стоимости разработки проекта</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-wrapp">
+          <h2 class="title">Строительство крыши это один из самых важных этапов строительства вашего дома, ведь от крыши зависит не только общий внешний вид дома, но и комфорт проживания в нем.</h2>
+
+          <p class="text paragraph">
+            В зависимости от типа крыши и климатического района строительной площадки, надо подбирать материалы для устройства крыши, которые оптимально подойдут именно в вашем случае. От выбранных материалов и правильной конструкции крыши зависит многое - уровень шума в доме от дождя или града, будет ли ваша крыша держать тепло в доме зимой и прохладу летом и многое другое. Все эти параметры напрямую влияют на стоимость крыши.
+          </p>
+
+          <p class="text">
+            Крыша на дом делается один раз, и ее надо сделать хорошо, закажите бесплатную консультацию и наш менеджер предложит оптимальную для Вас по цене и качеству крышу.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="index-constBlocks roof-blocks" style="padding-top: 95px;">
+      <div class="container">
+        <h3 class="title-head">Основные кровельные покрытия с которыми мы работаем</h3>
+      </div>
+      <div class="container">
+        <div class="row project-slide">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project project_top">
+              <div class="img" style="background-image: url(img/coating_1.jpg)"></div>
+              <h2 class="f24 title">Металлочерепица</h2>
+
+              <p class="price">
+                <span class="text">от</span> <span class="number">1 000</span> <span class="moudule">руб/м<sup>2</sup></span>
+              </p>
+
+              <hr class="line">
+
+              <ul class="list">
+                <li>Имитирует натуральную черепицу</li>
+                <li>Недорого стоит</li>
+                <li>Хорошо служит</li>
+                <li>Самое распространенное покрытие кровли в Крыму</li>
+                <li>Внутренние перегородки</li>
+              </ul>
+              <p class="slide-text">Представляет собой прокатанные листы окрашенной оцинкованной стали,
+              отличается толщиной и волной листа,
+              срок службы 40-50 лет.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project project_top">
+              <div class="img" style="background-image: url(img/coating_2.jpg)"></div>
+              <h2 class="f24 title">Битумная кровля</h2>
+
+              <p class="price">
+                <span class="text">от</span> <span class="number">1 300</span> <span class="moudule">руб/м<sup>2</sup></span>
+              </p>
+
+              <hr class="line">
+
+              <ul class="list">
+                <li>Выгодно сочетается практически с любыми фасадами</li>
+                <li>Не выгорает, не деформируется</li>
+                <li>Повышенная тепло и звуко изоляция</li>
+                <li>Срок службы до 50 лет</li>
+              </ul>  
+              <p class="slide-text">Это многослойный материал, состоит из стеклохолста, модифицированного битума, цветных каменных гранул и т.д. Большой выбор расцветок и форм.</p>       
+            </div> 
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+             <div class="project project_top">
+              <div class="img" style="background-image: url(img/coating_3.jpg)"></div>
+              <h2 class="f24 title">Керамическая черепица</h2>
+
+              <p class="price">
+                <span class="text">от</span> <span class="number">3 000</span> <span class="moudule">руб/м<sup>2</sup></span>
+              </p>
+              
+              <hr class="line">
+
+              <ul class="list">
+                <li>Презентабельный, шикарный внешний вид</li>
+                <li>Высокие тепло-шумоизоляционные показатели, морозоустойчивый</li>
+                <li>Устойчивый к UV лучам, огнеупорный, экологически чистый материал</li>
+                <li>Срок службы больше 100 лет</li>
+              </ul>
+              <p class="slide-text">Состоит из глины, большой выбор цветовой палитры. Премиум класс, всегда в моде.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="block-apply-form roofs-form">
+      <div class="container">
+        <h2><b>Заказать расчет</b> стоимости крыши</h2>
+        <p class="f16">Заполните данную форму, и наш специалист свяжется с вами в ближайшее время,<br> чтобы ответить на интересующие вопросы</p>
+        <form action="">
+          
+          <div class="inputs-wrap col-lg-12 col-sm-12">
+            <div class="input-wrap">
+              <input type="text" name="" placeholder="Ваше имя" class="def-input"><span class="is-valid"></span>
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" placeholder="Номер телефона" class="def-input"><span class="not-valid"></span>
+            </div>
+            <div class="input-wrap">
+              <input type="mail" name="" placeholder="Электронная почта" class="def-input"><span class="not-valid"></span>
+            </div>
+
+           
+          </div>
+          <div class="col-lg-12 col-sm-12 input-secondCol">
+             <div class="input-wrap">
+                <select class="form-selectize" data-placeholder="Выберите вид отделки">
+                  <option></option>
+                  <option>Ракушечник</option>
+                  <option>Газобетон</option>
+                  <option>Полистиролбетон</option>
+                </select>
+              </div>
+            <div class="input-wrap">
+              <input type="text" name="" placeholder="Комментарий" class="def-input">
+            </div>
+          </div>
+          <div class="form-bot col-sm-12">
+            <label class="input-checkbox">
+              <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+              <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+            </label>
+            <button class="form-btn">Заказать расчет</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="roofs-freeText">
+      <div class="container">
+        <p>
+          Ценообразование строительства крыши зависит от количества и качества используемых материалов,<br> объема выполняемых работ, удаленности объекта и подъездных путей, закажите расчет предварительной<br> стоимости наш менеджер свяжется с вами для уточнения деталий, вас это ни к чему не обязывает.
+        </p>
+      </div>
+    </section>
+
+    <hr class="prime-hr">
+  
+
+
+    <section class="roofs-coating">
+      <div class="container">
+        <h3 class="title-head">Основные кровельные покрытия с которыми мы работаем</h3>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="coating-wrapp">
+              <img src="img/main_coating.jpg" alt="Основные кровельные покрытия">
+
+              <h4 class="title">Пирог утепленного ската<br> под металлочерепицу</h4>
+
+              <ul class="list">
+                <li><span>1.</span>Стропила</li>
+                <li><span>2.</span>Пароизоляция</li>
+                <li><span>3.</span>Нижняя обрешетка</li>
+                <li><span>4.</span>Утеплитель</li>
+                <li><span>5.</span>Гидроизоляция</li>
+                <li><span>6.</span>Контррейка</li>
+                <li><span>7.</span>Верхняя обрешетка</li>
+                <li><span>8.</span>Металлочерепица</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="coating-wrapp">
+              <img src="img/main_coating.jpg" alt="Основные кровельные покрытия">
+
+              <h4 class="title">Пирог утепленного ската<br> под металлочерепицу</h4>
+
+              <ul class="list">
+                <li><span>1.</span>Стропила</li>
+                <li><span>2.</span>Пароизоляция</li>
+                <li><span>3.</span>Нижняя обрешетка</li>
+                <li><span>4.</span>Утеплитель</li>
+                <li><span>5.</span>Гидроизоляция</li>
+                <li><span>6.</span>Контррейка</li>
+                <li><span>7.</span>Верхняя обрешетка</li>
+                <li><span>8.</span>Металлочерепица</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="coating-wrapp">
+              <img src="img/main_coating.jpg" alt="Основные кровельные покрытия">
+
+              <h4 class="title">Пирог утепленного ската<br> под металлочерепицу</h4>
+
+              <ul class="list">
+                <li><span>1.</span>Стропила</li>
+                <li><span>2.</span>Пароизоляция</li>
+                <li><span>3.</span>Нижняя обрешетка</li>
+                <li><span>4.</span>Утеплитель</li>
+                <li><span>5.</span>Гидроизоляция</li>
+                <li><span>6.</span>Контррейка</li>
+                <li><span>7.</span>Верхняя обрешетка</li>
+                <li><span>8.</span>Металлочерепица</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="roofs-colText">
+      <div class="container">
+        <p><span>Теплоизоляция кровли</span> - от теплоизоляции кровли зависит, будет ли минимальной потеря тепла через крышу. Мы делаем такую теплоизоляцию, которая препятствует возникновению поверхностной конденсации. Утеплитель, который мы устанавливаем между стропилами, выполняет несколько функций: он обеспечивает звукоизоляцию, экономит затраты  на отопление и препятствовать нагреванию кровли.</p>
+
+        <p><span>Пароизоляция кровли</span> - не допускает попадание паров из внутренних помещений в утеплитель. В результате влажность не нарушает многослойную конструкцию кровли.</p>
+        <p>Гидроизоляция кровли - защищает утеплитель от влаги, снега и дождя.  Мы используем самую современную гидроизоляционную пленку разных видов.</p>
+        <p><span>Огнебиозащита</span> - лес.</p>
+        <p><span>Вентиляция кровли</span> - Мы делаем систему вентиляции подкровельного пространства. То есть, сооружаем своеобразный барьер против сырости: благодаря вентиляции, влажный воздух легко удаляется из-под крыши. Это достигается путем естественной тяги, либо с помощью специальных </p>
+        <p>вентиляционных клапанов. Мы объясняем клиентам, что система вентиляции потребует увеличении сметы, но эти расходы значительно продлевают срок службы крыши.</p>
+        <p><span>Монтаж водосточных систем</span> - наличие водостока является необходимым элементом полноценной кровли: водостоки нужны для защиты фасада  и цоколя здания от преждевременного разрушения от влаги. Для скатных крыш мы используем наружную систему водостока. Она состоит из желобов и труб, изготовленных из ПВХ или металла. Для плоской кровли мы монтируем внутреннюю систему водостока: ее образуют водосливные воронки, трубы и соединительные элементы.</p>
+        <p>Многим клиентам нужна подробная консультация по кровле. В компании Русский Запад вам предоставят все необходимые расчеты  и проконсультируют по любому вопросу. Мы помогаем выбрать оптимальный вид кровли – исходя из архитектурной конструкции крыши. Мы учитываем пожелания клиентов к дизайну и цветовой гамме черепицы, выбирая  из материала разных размеров, форм и расцветок наиболее подходящий  и гармоничный вариант.</p>
+      </div>
+    </section>
+
+    <section class="private-scheme roof-scheme">
+      <div class="container">
+        <h2 class="section-h2 sample-h2">Схема работы</h2>
+        <div class="items-wrap f16">
+          <div class="row">
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/priv-scheme1.png);"></span>
+              <p class="scheme-text">Звонок в офис или встреча</p>
+            </div>
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/priv-scheme4.png);"></span>
+              <p class="scheme-text">Выезд на замеры</p>
+            </div>
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/priv-scheme2.png);"></span>
+              <p class="scheme-text">Разработка проекта <br>(если нет)</p>
+            </div>
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/priv-scheme9.png);"></span>
+              <p class="scheme-text">Подбор материалов</p>
+            </div>
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/priv-scheme9.png);"></span>
+              <p class="scheme-text">Составление сметы</p>
+            </div>
+            
+            
+          </div>
+          <div class="row row-second">
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/priv-scheme3.png);"></span>
+              <p class="scheme-text">Заключение <br> договора</p>
+            </div>
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/scheme_5.png);"></span>
+              <p class="scheme-text">Монтаж<br> стропильной<br> системы</p>
+            </div>
+           
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/scheme_9.png);"></span>
+              <p class="scheme-text">Монтаж кровельного пирога, водосточки, обрамление вентканалов.</p>
+            </div>
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/scheme_11.png);"></span>
+              <p class="scheme-text">Сдача объекта</p>
+            </div>
+            <div class="col-20-per col-sm-4 scheme-item">
+              <span class="img-wrap" style="background-image: url(img/scheme_12.png);"></span>
+              <p class="scheme-text">Гарантия на работы 5 лет. Гарантия на материалы от 10 лет.</p>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+
+
+     <section class="index-construction" style="padding-top: 90px;">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">  
+
+        <h2 class="ready-title">Посмотрите дома уже построенные нами</h2>
+
+        <div class="const-slider-2">
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_1.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Ст. Балаклава<br> (текущий проект)</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_2.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Пальмира</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_3.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Садовый домик,<br> Северная 20 км</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_4.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Дом под ключ, Гранат</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_5.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Частный дом, Голландия (текущий проект)</h3>
+                </div>
+              </div>
+            </div>
+            <div class="const-2-slide-paginator">
+              <ul>
+                  <li class="slide-arrow const-2-slide-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </li>
+                  <li class="slide-arrow const-2-slide-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </li>
+              </ul>
+            </div>
+
+            <button class="btn-prime slide-btn">Все готовые объекты</button>
+            </div>
+            </div>
+      </div>
+    </section>
+
+    <hr class="prime-hr" style="margin-bottom: 45px; ">
+
+    <section class="block-seo">
+      <div class="container">
+        <h2 class="seo-head">Проектирование и строительство <br>домов и коттеджей</h2>
+        <div class="seo-text">
+          <p>Закажите индивидуальное проектирование загородных домов
+            в архитектурной студии «Новый Свет», и получите в качестве бонуса
+            бесплатное устройство ландшафтного дизайна!</p>
+          <p>Кроме того, у нас действует дисконтная программа, согласно которой вы
+            получаете приятные скидки на ряд других услуг (строительство, авторский
+            надзор, дизайн интерьера и т.д.), а также дисконт на покупку качественных
+            строительных материалов у наших проверенных партнеров.</p>
+          <p>Несмотря на то, что проектирование домов – очень трудоемкий процесс,
+           опытные архитекторы студии «Новый Свет» справляются с ним не просто
+           на «отлично», а безупречно. Замысловатые неординарные формы, плавные
+           линии, впечатляющие фасады – это их стихия, их призвание созидать
+           и творить прекрасное.</p>
+          <p>Требуются услуги архитектора, дизайнера или строителя?
+            Тогда мы едем к вам!</p>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container footer-top-wrap hidden-xs">
+        <div class="footer-top">
+          <ul class="pull-left f16 nav-links">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости и статьи</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Вопрос-ответ</a></li>
+            <li><a href="#">Полезная информация</a></li>
+            <li><a href="#">Контактная информация</a></li>
+          </ul>
+          <ul class="pull-right social-links">
+            <li><a href="#"><i class="fa fa-vk fa-vk-fix" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="prime-hr">
+      <div class="container">
+        <div class="footer-bot">
+          <div class="col-sm-3 working-time visible-lg">
+            <p class="f18">Офисы продаж работают:</p>
+            <ul class="f14">
+              <li>по будням с 9.30 до 18.00</li>
+              <li>в субботу с 10.00 до 16.00</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 city-data">
+            <span class="city-name f18">Севастополь</span>
+            <span class="city-phone f24">8 978 793 17 23</span>
+          </div>
+          <div class="col-lg-3 col-sm-6 city-data">
+            <span class="city-name f18">Симферополь</span>
+            <span class="city-phone f24">8 978 888 06 07</span>
+          </div>
+          <div class="col-sm-3 text-right visible-lg">
+            <button class="btn-prime get-consult">Получить консультацию</button>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="pull-left">Copyright 2017, ООО Строительная компания «Новый Свет»</p>
+          <p class="pull-right">Сделано <a href="#" class="dev-ico">SODA</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+       <!--  <iframe width="600" height="355" src="https://www.youtube.com/embed/0vrdgDdPApQ" frameborder="0" allowfullscreen></iframe>
+ -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="call-me-modal prime-modal modal fade" id="callMeModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <h2>Перезвоните мне</h2>
+            <div class="input-wrap">
+              <input type="text" name="" class="field" placeholder="Ваше имя">
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" class="field" placeholder="Номер телефона">
+            </div>
+            <div class="input-wrap prime-checkbox-wrap">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+            </div>
+            <button>Отправить</button>
+          </form>
+          <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="get-consult-modal prime-modal modal fade" id="getConsultModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <h2>Вам нужна подробная консультация?</h2>
+            <p class="text">Заполните форму, и наш специалист свяжется с вами в ближайшее время, чтобы ответить на интересующие вопросы</p>
+            <div class="input-wrap">
+              <input type="text" name="" class="field" placeholder="Ваше имя">
+            </div>
+            <div class="input-wrap">
+              <textarea name="" class="field" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" class="field" placeholder="Номер телефона">
+            </div>
+            <div class="input-wrap">
+              <input type="mail" name="" class="field" placeholder="Электронная почта">
+            </div>
+            <div class="input-wrap">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+            </div>
+            <button>Отправить</button>
+          </form>
+          <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+
+    <span id="back-to-top" href="#" class="btn back-to-top" data-placement="left"><i class="fa fa-angle-up"></i></span>
+    <span class="desktop_check-jquery visible-lg"></span>
+    <span class="tablet_check-jquery visible-sm visible-md"></span>
+    <span class="mobile_check-jquery visible-xs"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

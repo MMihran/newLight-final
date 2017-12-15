@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Новый свет</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/range/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="header">
+      
+      <div class="menu-fix-mobile">
+        <div class="header-top-menu">
+          <div class="container">
+            <div class="col-md-12">
+              <ul class="pull-left f16 nav-links">
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости и статьи</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Контактная информация</a></li>
+              </ul>
+              <ul class="pull-right social-links">
+                <li><a href="#"><i class="fa fa-vk fa-vk-fix" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container header-top-wrap">
+          <div class="col-md-12">
+            <div class="header-top clearfix">
+              <div class="navbar-header">
+                <button type="button" class="btn-bar menu-toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <a class="navbar-brand" href="#">Новый свет</a><span class="f14 hidden-xs">Строительство домов в Крыму</span>
+              </div>
+            
+              <div class="nav navbar-nav navbar-right hidden-xs">
+                  <div class="btn-group">
+                    <button type="button" class="choose-city dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="city-name">Севастополь</span>
+                      <span class="city-phone f18">8 978 793 17 23</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <span class="city-name">Симферополь</span>
+                        <span class="city-phone f18">8 987 888 21 17</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="btn-prime f14 call-me call-me-toggle" data-target="#callMeModal">Перезвоните мне</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-fix">
+        <div class="header-bot clearfix hidden-xs">
+          <div class="container">
+            <div class="col-md-12">
+              <ul class="nav navbar-nav f16 megamenu">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Готовые проекты</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Проектирование</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Строительство</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отделочные работы</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Кровельные работы</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Галерея работ</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Информация</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="header-search">
+                <button type="button" class="search-btn"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></button>
+                <input type="text" name="" placeholder="Поиск по сайту">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li class="active"><a href="#">Проектирование</a></li>
+      </ul>
+    </div>
+
+
+    <section class="pCart-page prime-content-wrapper">
+      <div class="container">
+        <div class="project-top">
+          <h2 class="title-h2 with-arr">
+            <div class="proj-pagination same-line">
+              <a href="#" class="proj-prev"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span> <span class="text">Предыдущий <br>проект</span></a>
+              <a href="#" class="proj-next"><span class="text">Следующий <br>проект</span> <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+            </div>
+            Проект 64-16-NS
+          </h2>
+        </div>
+        <div class="pCart-project">
+          
+          
+         
+          <div class="cart-sliders">
+            <div class="sliders-wrap">
+              <div class="private-prime-slider project-prime-slider" id="private-prime-proj">
+                <img src="img/cart-slider.jpg" alt="" data-target="#primeSliderModal">
+              </div>
+              <div class="private-nav-slider project-nav-slider" id="private-nav-proj">
+                <div class="nav-slides">
+                  <div><img src="img/private-s1.jpg" alt=""></div>
+                  <div><img src="img/cart-slider.jpg" alt=""></div>
+                  <div><img src="img/private-s3.jpg" alt=""></div>
+                  <div><img src="img/private-s2.jpg" alt=""></div>
+                  <div><img src="img/private-s4.jpg" alt=""></div>
+                  <div><img src="img/private-s6.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="pCart-info">
+              <div class="info-wrap">
+                <div class="info-area">
+                    <span class="opt-head f14">Площадь дома</span>
+                    <span class="f18"><b>226</b> м<sup>2</sup></span>
+                </div>
+                <div class="project-cost">
+                  <p class="f16">Стоимость строительства:</p>
+                  <div class="info-item">
+                      <span class="opt-head f14">Коробка дома</span>
+                      <span class="price f18">2 300 000 руб.</span>
+                  </div>
+                  <div class="info-item">
+                      <span class="opt-head f14">с чистовой отделкой</span>
+                      <span class="price f18">3 100 000 руб.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-about">
+                <p>
+                  <span>Эскизный проект + </span>
+                  <span>Рабочий проект +</span>
+                  <span>Смета</span>
+                </p>
+                <p class="price">25 000 руб</p>
+                <div class="info-bot">
+                  <a href="#" class="btn-prime">Купить</a>
+                  <span class="visa"><img src="img/visa.png" alt=""></span>
+                  <span class="master"><img src="img/master.jpg" alt=""></span>
+                </div>
+              </div>
+          </div>
+          
+          
+          
+          <div class="pCart-planning private-faq">
+          <div class="tabs-wrap f16">
+            <div class="nav-tabs-wrap">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#layout-tab" aria-controls="layout-tab" role="tab" data-toggle="tab">Планировки</a></li>
+                <li role="presentation"><a href="#specs-tab" aria-controls="specs-tab" role="tab" data-toggle="tab">Характеристики</a></li>
+                <li role="presentation"><a href="#cost-tab" aria-controls="cost-tab" role="tab" data-toggle="tab">Что входит в стоимость проекта?</a></li>
+                <li role="presentation"><a href="#shipping-tab" aria-controls="shipping-tab" role="tab" data-toggle="tab">Доставка</a></li>
+              </ul>
+            </div>
+          
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="layout-tab">
+                <div class="pCart-layouts">
+                  <a href="#" data-target="#layoutModal"><img src="img/cart-plan1.jpg" alt=""></a>
+                  <a href="#" data-target="#layoutModal"><img src="img/cart-plan2.jpg" alt=""></a>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="specs-tab">
+                <div class="pCart-spec">
+                  <h2>О проекте</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <ul class="list-purple-style f14">
+                        <li>Наличие балконов: нет</li>
+                        <li>Кол-во жилых комнат: 5 шт</li>
+                        <li>Кол-во сан. узлов: 2 шт</li>
+                        <li>Кол-во этажей: 2 этажа</li>
+                        <li>Высота потолков: 2,8 м</li>
+                        <li>Наличие мансарды: нет</li>
+                        <li>Вид крыши: 4-х скатная (металлочерепица)</li>
+                        <li>Наличие цоколя: нет</li>
+                        <li>Используемый материал: полистиролбетон</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <table class="table table-striped">
+                        <tr></tr>
+                        <tr>
+                          <td>Площадь</td>
+                          <td>243 м<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                          <td>Кол-во этажей</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td>Кол-во жилых комнат</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>Кол-во санузлов</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td>Гараж</td>
+                          <td>нет</td>
+                        </tr>
+                        <tr>
+                          <td>Крыша</td>
+                          <td>металлочерепица</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <table class="table table-striped">
+                        <tr>
+                          <th>Этаж</th>
+                          <th>Высота потолков</th>
+                          <th>Материал стен</th>
+                          <th>Перекрытие</th>
+                        </tr>
+                        <tr>
+                          <td>Цокольный</td>
+                          <td>3,5 м</td>
+                          <td>Ракушечник</td>
+                          <td>Монолитное</td>
+                        </tr>
+                        <tr>
+                          <td>1-й</td>
+                          <td>3 м</td>
+                          <td>Ракушечник</td>
+                          <td>Монолитное</td>
+                        </tr>
+                        <tr>
+                          <td>2-й</td>
+                          <td> 3 м</td>
+                          <td>Ракушечник</td>
+                          <td>Деревянное</td>
+                        </tr>
+                        <tr>
+                          <td>Мансардный</td>
+                          <td>0-2,5 м</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="cost-tab">
+                <div class="pCart-spec">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h2>Архитектурное решение</h2>
+                      <p class="f14">В архитектурные чертежи входит:</p>
+                      <ul class="list-purple-style f14">
+                        <li>Привязка здания к границам участка</li>
+                        <li>Поэтажные планировки</li>
+                        <li>Разрез здания</li>
+                        <li>План кровли</li>
+                        <li>Плоскостные фасады — 4 шт</li>
+                        <li>3D Визуализация — 4 шт</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <h2>Рабочий проект</h2>
+                      <p class="f14">Включает в себя конструктивные чертежи:</p>
+                      <ul class="list-purple-style f14">
+                        <li>Фундаментов</li>
+                        <li>Развертка стен (с разработкой перемычек, колонн, поясов и т.д.)</li>
+                        <li>Межэтажные перекрытия</li>
+                        <li>Разработка крыши</li>
+                        <li>Схема вентиляционных каналов</li>
+                        <li>Общие данные по объекту</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <span class="info">Проект предоставляется заказчику в распечатанном виде в 2 экземплярах формата А3. (для строителей и заказчика по 1 экземпляру)</span>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="shipping-tab">
+                <p>Сэкономьте деньги и время - закажити проект своего будущего дома. К каждому нашему проекту мы выдаем подробную строительную смету на материалы, работы, доставку, аренду спецтехники, опалубки и т.д. с учетом географического расположения вашей строительной площадки.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+
+
+          
+
+      
+    </section>
+
+
+    <section class="cart-recommend">
+      <div class="container">
+        <h2>Вместе с данным проектом мы рекомендуем услуги</h2>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <div class="item">
+              <span class="img-wrap"><img src="img/recom-1.jpg" alt=""></span>
+              <div class="text-wrap">
+                <p class="head f24">Адаптация фунтдамента</p>
+                <p class="text">Адаптируйте фундамент <br>для вашего участка</p>
+                <a href="#" class="more">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="item">
+              <span class="img-wrap"><img src="img/recom-2.jpg" alt=""></span>
+              <div class="text-wrap">
+                <p class="head f24">Проект «Теплый пол»</p>
+                <p class="text">Создайте комфортный климат в вашем доме</p>
+                <a href="#" class="more">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section class="block-apply-form roofs-form block-textarea-form">
+      <div class="container">
+        <h2><b>Остались вопросы?</b> Задавайте</h2>
+        <p class="f16">Заполните данную форму, и наш специалист свяжется с вами в ближайшее время, чтобы ответить на интересующие вопросы</p>
+        <form action="">
+          
+          <div class="inputs-wrap col-lg-12">
+            <div class="input-wrap">
+              <input type="text" name="" placeholder="Ваше имя" class="def-input"><span class="is-valid"></span>
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" placeholder="Номер телефона" class="def-input"><span class="is-valid"></span>
+            </div>
+            <div class="input-wrap">
+              <input type="mail" name="" placeholder="Электронная почта" class="def-input"><span class="not-valid"></span>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="textarea-wrap">
+              <textarea placeholder="Сообщение" class="def-input"></textarea><span class="is-valid"></span>
+            </div>
+          </div>
+          <div class="form-bot col-sm-12">
+            <label class="input-checkbox">
+              <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+              <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+            </label>
+            <button class="form-btn">Отправить вопрос</button>
+          </div>
+        </form>
+      </div>
+    </section>
+   
+
+    <section class="pCart-construct">
+      <div class="container">
+        <div class="section-wrap">
+          <div class="const-img-wrap">
+            <img src="img/promo/pCart-pic.jpg" alt="">
+          </div>
+          <div class="text-wrap">
+            <p class="head">Построим дом по этому <br>проекту 64-16-NS</p>
+            <p class="proj"></p>
+            <p class="text">Представляет собой компактный функциональный дом с мансардой с камином на террасе. В нем очент удачно сочетаются аккуратная форма, кормфорт внутреннего пространства и стильный дизайн экстерьера.</p>
+            <a class="more" href="#">Узнать подробности строительства</a>
+          </div>
+          <div class="pCart-info">
+              <div class="project-cost">
+                <p class="f16">Стоимость строительства:</p>
+                <div class="info-item">
+                    <span class="opt-head f14">Коробка дома</span>
+                    <span class="price f18">2 300 000 руб.</span>
+                </div>
+                <div class="info-item">
+                    <span class="opt-head f14">с чистовой отделкой</span>
+                    <span class="price f18">3 100 000 руб.</span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="s-promo-bot" style="border-top: none;">
+          <a href="#" class="go-back">Назад</a>
+          <div class="social-mini">
+            <p>Поделиться в социальных сетях</p>
+            <ul class="social-icos">
+              <li style="background-position: 0 0;"><a href="#"></a></li>
+              <li style="background-position: -23px 0;"><a href="#"></a></li>
+              <li style="background-position: -46px 0;"><a href="#"></a></li>
+              <li style="background-position: -69px 0;"><a href="#"></a></li>
+              <li style="background-position: -92px 0;"><a href="#"></a></li>
+              <li style="background-position: -115px 0;"><a href="#"></a></li>
+              <li style="background-position: -138px 0;"><a href="#"></a></li>
+              <li style="background-position: -161px 0;"><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="index-readyProjects pCart-similar">
+      <div class="block-hidden">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">             
+        
+                <h2 class="title">Похожие проекты</h2>
+                <p class="slogan f24">Выберите из множества представленных у нас проектов</p>
+        
+                <div class="project-slider">
+                  <div class="slide">
+                    <div class="slide-wrapp">
+                      <div class="mark mark-prime">Мы рекомендуем</div>
+                      <div class="img img-1"></div>
+                      <h3 class="slide-title f18">Дом в стиле модерн</h3>
+                      <p class="square f16">164,5 м<sup>2</sup></p>
+                      <p class="price f24">25 000 руб.</p>
+        
+                      <div class="slide-hover">
+                        <hr class="line">
+                        <p class="f14 first">Количество спален: 6</p>
+                        <p class="f14">Количество с/у: 2</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="slide-wrapp">
+                      <div class="img img-2"></div>
+                      <h3 class="slide-title f18">Дачный дом</h3>
+                      <p class="square f16">182 м<sup>2</sup></p>
+                      <p class="price f24">25 000 руб.</p>
+        
+                      <div class="slide-hover">
+                        <hr class="line">
+                        <p class="f14 first">Количество спален: 6</p>
+                        <p class="f14">Количество с/у: 2</p>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="slide">
+                    <div class="slide-wrapp">
+                      <div class="mark mark-green">Новинка</div>
+                      <div class="img img-3"></div>
+                      <h3 class="slide-title f18">Дом с мансардой</h3>
+                      <p class="square f16">166 м<sup>2</sup></p>
+                      <p class="price f24">25 000 руб.</p>
+        
+                      <div class="slide-hover">
+                        <hr class="line">
+                        <p class="f14 first">Количество спален: 6</p>
+                        <p class="f14">Количество с/у: 2</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="slide-wrapp">
+                      <div class="img img-4"></div>
+                      <h3 class="slide-title f18">Проект дома с терассой</h3>
+                      <p class="square f16">121 м<sup>2</sup></p>
+                      <p class="price f24">25 000 руб.</p>
+        
+                      <div class="slide-hover">
+                        <hr class="line">
+                        <p class="f14 first">Количество спален: 6</p>
+                        <p class="f14">Количество с/у: 2</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="slide-wrapp">
+                      <div class="img img-1"></div>
+                      <h3 class="slide-title f18">Дом в стиле модерн</h3>
+                      <p class="square f16">164,5 м<sup>2</sup></p>
+                      <p class="price f24">25 000 руб.</p>
+        
+                      <div class="slide-hover">
+                        <hr class="line">
+                        <p class="f14 first">Количество спален: 6</p>
+                        <p class="f14">Количество с/у: 2</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="slide-wrapp">
+                      <div class="img img-3"></div>
+                      <h3 class="slide-title f18">Дом с мансардой</h3>
+                      <p class="square f16">166 м<sup>2</sup></p>
+                      <p class="price f24">25 000 руб.</p>
+        
+                      <div class="slide-hover">
+                        <hr class="line">
+                        <p class="f14 first">Количество спален: 6</p>
+                        <p class="f14">Количество с/у: 2</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="slide-wrapp">
+                      <div class="img img-4"></div>
+                      <h3 class="slide-title f18">Проект дома с терассой</h3>
+                      <p class="square f16">121 м<sup>2</sup></p>
+                      <p class="price f24">25 000 руб.</p>
+        
+                      <div class="slide-hover">
+                        <hr class="line">
+                        <p class="f14 first">Количество спален: 6</p>
+                        <p class="f14">Количество с/у: 2</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="slide-container">
+                  <div class="project-slide-paginator visible-xs">
+                    <ul>
+                        <li class="slide-arrow project-slide-prev project-slide-arrow"><span></span></li>
+                        <li class="slide-arrow project-slide-next project-slide-arrow"><span></span></li>
+                    </ul>
+                  </div>
+                  <button class="btn-prime">Получить каталог проектов</button>
+                </div>
+            </div>
+        
+            
+          </div>
+        
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section class="index-book" style="padding-top: 0; padding-bottom: 95px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="block" style=""></div>
+          </div>
+          <div class="col-lg-4">
+            <img src="img/promo/cart-pic-promo.png" alt="книга" class="book-img">
+          </div>
+          <div class="col-lg-8">
+            <div class="head clearfix">
+
+              <table>
+                <tr>
+                  <td class="left">                    
+                    <h2 class="title">Хотите создать <span>свой <br>проект дома?</span></h2>
+                    <h3 class="subtitle f18">Наши архитекторы воплотят все ваши мечты</h3>
+                  </td>
+                  <td>
+                    <button class="btn-prime get-book">Выбрать архитектора</button>
+                  </td>
+                </tr>
+              </table>            
+            </div>
+            <p class="text">Есть общие правила выбора лучшего места под строительство дома. Эти правила подходят<br> и для людей, которые строят для себя, и для тех, кто собирается сдавать построенный дом в аренду.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="container footer-top-wrap hidden-xs">
+        <div class="footer-top">
+          <ul class="pull-left f16 nav-links">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости и статьи</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Вопрос-ответ</a></li>
+            <li><a href="#">Полезная информация</a></li>
+            <li><a href="#">Контактная информация</a></li>
+          </ul>
+          <ul class="pull-right social-links">
+            <li><a href="#"><i class="fa fa-vk fa-vk-fix" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="prime-hr">
+      <div class="container">
+        <div class="footer-bot">
+          <div class="col-sm-3 working-time visible-lg">
+            <p class="f18">Офисы продаж работают:</p>
+            <ul class="f14">
+              <li>по будням с 9.30 до 18.00</li>
+              <li>в субботу с 10.00 до 16.00</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 city-data">
+            <span class="city-name f18">Севастополь</span>
+            <span class="city-phone f24">8 978 793 17 23</span>
+          </div>
+          <div class="col-lg-3 col-sm-6 city-data">
+            <span class="city-name f18">Симферополь</span>
+            <span class="city-phone f24">8 978 888 06 07</span>
+          </div>
+          <div class="col-sm-3 text-right visible-lg">
+            <button class="btn-prime get-consult">Получить консультацию</button>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="pull-left">Copyright 2017, ООО Строительная компания «Новый Свет»</p>
+          <p class="pull-right">Сделано <a href="#" class="dev-ico">SODA</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="layout-modal video-modal modal fade" id="layoutModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-pic-wrap">
+              <img src="" alt="">
+            </div>
+          <button type="button" class="btn btn-default modal-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="primeSlider-modal video-modal modal fade" id="primeSliderModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-pic-wrap">
+              <div class="private-prime-slider project-prime-slider" id="">
+                <img src="img/cart-slider.jpg" alt="" class="current">
+              </div>
+              <div class="arrows">
+               <button class="slick-next slick-arrow"></button>
+               <button class="slick-prev slick-arrow"></button>
+             </div>
+            </div>
+          <button type="button" class="btn btn-default modal-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="call-me-modal prime-modal modal fade" id="callMeModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <h2>Перезвоните мне</h2>
+            <div class="input-wrap">
+              <input type="text" name="" class="field" placeholder="Ваше имя">
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" class="field" placeholder="Номер телефона">
+            </div>
+            <div class="input-wrap prime-checkbox-wrap">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+            </div>
+            <button>Отправить</button>
+          </form>
+          <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="get-consult-modal prime-modal modal fade" id="getConsultModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <h2>Вам нужна подробная консультация?</h2>
+            <p class="text">Заполните форму, и наш специалист свяжется с вами в ближайшее время, чтобы ответить на интересующие вопросы</p>
+            <div class="input-wrap">
+              <input type="text" name="" class="field" placeholder="Ваше имя">
+            </div>
+            <div class="input-wrap">
+              <textarea name="" class="field" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" class="field" placeholder="Номер телефона">
+            </div>
+            <div class="input-wrap">
+              <input type="mail" name="" class="field" placeholder="Электронная почта">
+            </div>
+            <div class="input-wrap">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+            </div>
+            <button>Отправить</button>
+          </form>
+          <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+
+    <span id="back-to-top" href="#" class="btn back-to-top" data-placement="left"><i class="fa fa-angle-up"></i></span>
+
+    <span class="desktop_check-jquery visible-lg"></span>
+    <span class="tablet_check-jquery visible-sm visible-md"></span>
+    <span class="mobile_check-jquery visible-xs"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+         /*TOP___THUMBNAIL___SLIDERS  -----  COPY ---- NEED MERGE&DELETE*/
+        function projectSlidersInit(prime, nav, opt){
+          console.log(opt);
+          var privOptSlider = $(opt).slick({
+            dots: false,
+            arrows: false,
+            asNavFor: ".nav-slides",
+            infinite: false,
+            speed: 400,
+            responsive: [
+              {
+                breakpoint: 1200,
+                settings:{
+                  slidesToShow: 1,
+                  adaptiveHeight: true
+                }
+              }
+            ]
+          });
+          var privNavSlider = $(nav + " .nav-slides").slick({
+            arrows:false,
+            dots:false,
+            infinite: true,
+            arrows: true,
+            asNavFor: opt,
+            slidesToScroll: 1,
+            centerMode: true,
+            speed: 400,
+            focusOnSelect: true,
+            variableWidth: true,
+            infinite: true,
+          });
+          privNavSlider.on("beforeChange", function(e, slick, curr, next){
+            console.log("curr");
+            var src = $(slick.$slides[next]).children("img").attr("src");
+            $(prime + " img").hide().attr("src", src).fadeIn(350);
+            $("#primeSliderModal img.current").hide().attr("src", src).fadeIn(350);
+           
+          });
+
+          $('.primeSlider-modal .slick-prev').click(function(){
+            privNavSlider.slick("slickPrev")
+          });
+          $('.primeSlider-modal .slick-next').click(function(){
+            privNavSlider.slick("slickNext")
+          });
+        }
+
+
+        /*INIT*/
+        projectSlidersInit("#private-prime-proj", "#private-nav-proj");
+
+
+
+         //TABS_MANUAL_SLIDER
+
+        $("body").on("click", ".private-faq .nav-tabs-wrap li a", function(e){
+          if ($(".mobile_check-jquery").is(":visible")) {
+            var index = $(this).parent().index();
+            var slider = $(".private-faq .nav-tabs-wrap .nav-tabs");
+            slider.css("transition", "all 1s");
+            
+            if (index == (slider.children().length - 1)) {
+
+              if ($(this).parent().hasClass("cloned")) 
+              {
+                slider.css("transition", "all 0.4s");
+                index = 0;
+                $(this).parent().detach();
+                slider.children(".active").removeClass("active");
+                slider.children("li").first().addClass("active");
+              }
+              else
+              {
+                var clone = slider.children("li").first().clone().addClass("cloned");
+                clone.appendTo(slider);
+              }
+              
+            }
+            var leftSlide = -(slider.children("li").width()*index) + "px";
+            slider.css("left", leftSlide);
+          }
+        });
+      });
+
+    </script>
+
+  </body>
+</html>

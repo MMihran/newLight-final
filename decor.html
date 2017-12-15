@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Новый свет</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/selectize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      
+      <div class="menu-fix-mobile">
+        <div class="header-top-menu">
+          <div class="container">
+            <div class="col-md-12">
+              <ul class="pull-left f16 nav-links">
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости и статьи</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Контактная информация</a></li>
+              </ul>
+              <ul class="pull-right social-links">
+                <li><a href="#"><i class="fa fa-vk fa-vk-fix" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container header-top-wrap">
+          <div class="col-md-12">
+            <div class="header-top clearfix">
+              <div class="navbar-header">
+                <button type="button" class="btn-bar menu-toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <a class="navbar-brand" href="#">Новый свет</a><span class="f14 hidden-xs">Строительство домов в Крыму</span>
+              </div>
+            
+              <div class="nav navbar-nav navbar-right hidden-xs">
+                  <div class="btn-group">
+                    <button type="button" class="choose-city dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="city-name">Севастополь</span>
+                      <span class="city-phone f18">8 978 793 17 23</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <span class="city-name">Симферополь</span>
+                        <span class="city-phone f18">8 987 888 21 17</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="btn-prime f14 call-me call-me-toggle" data-target="#callMeModal">Перезвоните мне</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-fix">
+        <div class="header-bot clearfix hidden-xs">
+          <div class="container">
+            <div class="col-md-12">
+              <ul class="nav navbar-nav f16 megamenu">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Готовые проекты</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Проектирование</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Строительство</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Отделочные работы</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Кровельные работы</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Галерея работ</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Информация</a>
+                  <ul class="dropdown-menu megamenu-sub">
+                    <li><a href="#">Отопление, вентиляция</a></li>
+                    <li><a href="#">Проектирование частных домов</a></li>
+                    <li><a href="#">Водоснабжение, канализация</a></li>
+                    <li><a href="#">Архитектурный проект, эскизный проект, визуализация</a></li>
+                    <li><a href="#">Проектирование коммерческих объектов</a></li>
+                    <li><a href="#">Осмечивание проектов</a></li>
+                    <li><a href="#">Адаптация проекта под ваш участок</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="header-search">
+                <button type="button" class="search-btn"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></button>
+                <input type="text" name="" placeholder="Поиск по сайту">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li class="active"><a href="#">Проектирование</a></li>
+      </ul>
+    </div>
+
+
+     <section class="block-banner">
+      <div class="container">
+        <h2 class="banner-title title-h2 with-pag">
+          Декоративная штукатурка
+          <div class="proj-pagination">
+            <a href="#" class="proj-prev"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span> <span class="text">Комбинированная отделка</span></a>
+            <a href="#" class="proj-next"><span class="text">Отделка из природных материалов</span> <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+          </div>
+        </h2>
+        <div class="banner-pic-wrap" style="background-image: url(img/decor-banner.jpg);">
+          <div class="center-fix">
+            <div class="text-box long-box">
+              <p class="text-box-head">Делать фасад с нами - <br>надежно и выгодно!</p>
+              <div class="row">
+                <p class="f18 hidden-xs col-sm-4">Даем консультации<br> по отделке фасадов<br> здания</p>
+                <p class="f18 hidden-xs col-sm-4">Приезжаем <br>на замеры <br>бесплатно</p>
+                <p class="f18 hidden-xs col-sm-4">Подбираем <br>и рассчитываем <br>оптимальные материалы</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  
+    <section class="private-advantages">
+      <div class="container">
+        <div class="advantages-slider">
+          <div class="item col-lg-4 col-sm-6 text-center">
+            <span class="img-wrap"><img src="img/d-adv7.png" alt=""></span>
+            <p class="adv-head f18">Гарантия качества</p>
+            <p class="adv-text f14">В штате 6 квалифицированных бригад с 12&#8209;ти летним опытом работы и сотнями выполненных объектов за плечами</p>
+          </div>
+          <div class="item col-lg-4 col-sm-6 text-center">
+            <span class="img-wrap"><img src="img/d-adv6.png" alt=""></span>
+            <p class="adv-head f18">Оптовые цены на материалы</p>
+            <p class="adv-text f14">Имея партнерские отношения с поставщиками и производителями, мы предоставляем нашим заказчикам оптовые цены на все материалы для отделки фасадов</p>
+          </div>
+          <div class="item col-lg-4 col-sm-6 text-center">
+            <span class="img-wrap"><img src="img/p-adv4.png" alt=""></span>
+            <p class="adv-head f18">Экономия</p>
+            <p class="adv-text f14">Свои леса, наши заказчики не платят за их аренду, потому что мы не включаем стоимость аренды лесов в смету</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="limestone-text f16" style="padding-top: 95px; padding-bottom: 0; border-bottom: none;">
+      <div class="container">
+        <h2 class="sample-h2">Описание</h2>
+        <p>Декоративные фасадные штукатурки наносятся на подготовленное основание, имеющее армирующий слой. Собственно, декоративная фасадная штукатурка придает фасаду здания законченный вид. На выбор строителя предлагаются различныеитипы штукатурных смесей, которыми выполняются работы.</p>
+        <p>Основным отличием декоративных фасадных штукатурок является:</p>
+        <ul class="list-purple-style">
+          <li>вид фактуры (короед или камешковая),</li>
+          <li>размер зерна,</li>
+          <li>вид связующего.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="limestone-marks">
+      <div class="container">
+        <h2 class="sample-h2">Виды декоративных штукатурок</h2>
+        <div class="marks-wrap">
+          <div class="item">
+            <span class="img-wrap"><img src="img/decor-mark-1.jpg" alt=""></span>
+            <div class="text-box">
+              <p class="head">Минеральная штукатурка «Короед»</p>
+              <p class="item-price"><sup>от</sup><span>1 800</span><sub>руб/м<sup>2</sup></sub></p>
+              <p class="f14">«Короед» – декоративная штукатурка, используемая для отделки фасадов домов и сооружений административного, жилого и промышленного назначения. Изготавливается в виде сухой или готовой смеси на основе цемента, а также полимеров (акрила, силикона, силиката). В составе присутствует наполнитель – мелкие фракции гранита, кварца, мрамора.</p>
+            </div>
+          </div>
+          <div class="item">
+            <span class="img-wrap"><img src="img/decor-mark-2.jpg" alt=""></span>
+            <div class="text-box">
+              <p class="head">Минеральная штукатурка «Барашек»</p>
+              <p class="item-price"><sup>от</sup><span>1 800</span><sub>руб/м<sup>2</sup></sub></p>
+              <p class="f14">Материал позволяет замаскировать изъяны на стенах: трещины, выбоины. А поверхность, покрытая таким составом, становится более устойчивой к воздействию влаги, солнца, а также к механическим повреждениям.</p>
+              <p class="f14">Состав можно использовать на любой поверхности: на цементе, гипсе или обычной известковой штукатурке.</p>
+           
+            </div>
+          </div>
+          <div class="item">
+            <span class="img-wrap"><img src="img/decor-mark-3.jpg" alt=""></span>
+            <div class="text-box">
+              <p class="head">Минеральная штукатурка «Байрамикс»</p>
+              <p class="item-price"><sup>от</sup><span>2 500</span><sub>руб/м<sup>2</sup></sub></p>
+              <p class="f14">Мраморные штукатурки Bayramix применяются в качестве декоративно-отделочного материала на оштукатуренные поверхности, поверхности, покрытые ДСП, ДВП, фанерой, гипсокартоном, стены из легких и ячеистых бетонов. Материал наносится при помощи металлической затирки. Основные требования, предъявляемые к обрабатываемым поверхностям: поверхность должна быть чистой, сухой, ровной.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+    <section class="decor-how limestone-marks">
+      <div class="container">
+        <h2>Как мы делаем</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="how-item">
+              <div class="img-wrap">
+                <img src="img/decor-1.jpg" alt="">
+              </div>
+              <div class="item-head text-center">
+                <p class="head">Стандарт</p>
+                <p class="item-price"><sup>от</sup><span>1 800</span><sub>руб/м<sup>2</sup></sub></p>
+              </div>
+              <div class="item-bot">
+                <ul class="item-list">
+                 <li>Штукатурка стен по маякам цементно-песчаным раствором</li>
+                 <li>Грунтовка стен</li>
+                 <li>Монтаж утеплителя на сетны и откосы (на клей и дюбель-зонт, базальтовые плиты плотность 135 или пенопласт плотность 25)</li>
+                 <li>Монтаж армировачной сетки на клей и подготовка основания под декоративные штукатурки</li>
+                 <li>Грунт-краска с кварцевым песком</li>
+                 <li>Нанесение декоративной штукатурки (короед, барашек и т.д)</li>
+                 <li>Покраска стен в 2 слоя</li>
+               </ul>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="how-item">
+              <div class="img-wrap">
+                <img src="img/decor-1.jpg" alt="">
+              </div>
+              <div class="item-head text-center">
+                <p class="head">Эконом</p>
+                <p class="item-price"><sup>от</sup><span>1 300</span><sub>руб/м<sup>2</sup></sub></p>
+              </div>
+              <div class="item-bot">
+                <ul class="item-list">
+                 <li>Монтаж утеплителя на сетны и откосы (на клеевые маяки и дюбель-зонт</li>
+                 <li>Утеплитель пенопласт ПСБ-25)</li>
+                 <li>Монтаж армировачной сетки на клей и подготовка основания под декоративные штукатурки</li>
+                 <li>Грунт-краска с кварцевым песком</li>
+                 <li>Нанесение декоративной штукатурки (короед, барашек и т.д)</li>
+                 <li>Покраска стен в 2 слоя</li>
+               </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block-apply-form block-textarea-form roofs-form">
+      <div class="container">
+        <h2><b>Заказать расчет стоимости</b> наружной отделки</h2>
+        <p class="f16">Заполните данную форму, и наш специалист свяжется с вами в ближайшее время, чтобы ответить на интересующие вопросы</p>
+        <form action="">
+          
+          <div class="inputs-wrap col-lg-12">
+            <div>
+              <div class="input-wrap">
+                <input type="text" name="" placeholder="Ваше имя" class="def-input"><span class="is-valid"></span>
+              </div>
+              <div class="input-wrap">
+                <input type="tel" name="" placeholder="Номер телефона" class="def-input"><span class="is-valid"></span>
+              </div>
+              <div class="input-wrap">
+                <input type="mail" name="" placeholder="Электронная почта" class="def-input"><span class="not-valid"></span>
+              </div>
+            </div>
+            <div>
+              <div class="input-wrap input-long">
+                <select class="form-selectize" data-placeholder="Выберите вид отделки">
+                  <option></option>
+                  <option>Ракушечник</option>
+                  <option>Газобетон</option>
+                  <option>Полистиролбетон</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <input type="text" name="" placeholder="Площадь дома" class="def-input"><span class="not-valid"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="textarea-wrap">
+              <textarea placeholder="Сообщение" class="def-input"></textarea><span class="is-valid"></span>
+            </div>
+          </div>
+          <div class="form-bot col-sm-12">
+            <label class="input-checkbox">
+              <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+              <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+            </label>
+            <button class="form-btn">Заказать расчет</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+   <section class="private-advantages">
+      <div class="container">
+        <h2 class="sample-h2">В стоимость работ входит</h2>
+        <div class="advantages-slider">
+          <div class="item col-lg-2 col-sm-6 text-center">
+            <span class="img-wrap"><img src="img/d-adv1.png" alt=""></span>
+            <p class="adv-text f16">Закупка и доставка материалов</p>
+          </div>
+          <div class="item col-lg-2 col-sm-6 text-center">
+            <span class="img-wrap"><img src="img/d-adv2.png" alt=""></span>
+            <p class="adv-text f16">Разгрузочно-погрузочные работы</p>
+          </div>
+          <div class="item col-lg-2 col-sm-6 text-center">
+            <span class="img-wrap"><img src="img/d-adv3.png" alt=""></span>
+            <p class="adv-text f16">Доставка <br>и монтаж лесов</p>
+          </div>
+          <div class="item col-lg-2 col-sm-6 text-center">
+            <span class="img-wrap"><img src="img/l-adv5.png" alt=""></span>
+            <p class="adv-text f16">Расходные материалы</p>
+          </div>
+          <div class="item col-lg-2 col-sm-6 text-center">
+            <span class="img-wrap"><img src="img/d-adv4.png" alt=""></span>
+            <p class="adv-text f16">Уборка территории и вывоз строительного мусора</p>
+          </div>
+          <div class="item col-lg-2 col-sm-6 text-center">
+            <span class="img-wrap"><img src="img/d-adv5.png" alt=""></span>
+            <p class="adv-text f16">Гарантия на работы 1 год</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+   <section class="block-apply-form">
+      <div class="container">
+        <form action="">
+          <h2><b>Визуализация</b> поможет увидеть <br>как будет выглядеть ваш дом</h2>
+          <p class="f16">Создадим для вас уютный, комфортный дом под ваш строительный бюджет</p>
+          <div class="input-wrap">
+            <input type="text" name="" placeholder="Ваше имя"><span class="is-valid"></span>
+          </div>
+          <div class="input-wrap">
+            <input type="tel" name="" placeholder="Номер телефона"><span class="not-valid"></span>
+          </div>
+          <button class="form-btn">Заказать расчет</button>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="index-construction decor-construction">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <h2 class="title">Дополнительные фасадные работы</h2>
+            <p class="text f16">Производство работ по монтажу вентилируемых, деревянных, монолитных, кирпичных и каменных фасадов, так же производим оштукатуривание фасадов. Выполнение работ по утеплению, ремонту и чистке фасадов, так же производим работы по оформлению фасадов, реставрационные процедуры и прочие дополнительные фасадные работы.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container slide-container">
+        <h3 class="subtitle">Осуществляем монтаж декоративных элементов</h3>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="decor-items">
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <span class="img-wrap"><img src="img/decor-const-1.jpg" alt="const-slide"></span>
+                  <h3 class="slide-title f18">Оконные сборки</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <span class="img-wrap"><img src="img/decor-const-2.jpg" alt="const-slide"></span>
+                  <h3 class="slide-title f18">Дверные сборки</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <span class="img-wrap"><img src="img/decor-const-3.png" alt="const-slide"></span>
+                  <h3 class="slide-title f18">Рустовые камни</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <span class="img-wrap"><img src="img/decor-const-4.png" alt="const-slide"></span>
+                  <h3 class="slide-title f18">Карнизы <br>и наличники</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <span class="img-wrap"><img src="img/decor-const-5.png" alt="const-slide"></span>
+                  <h3 class="slide-title f18">Полуколонны и пилястры</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <span class="img-wrap"><img src="img/decor-const-6.png" alt="const-slide"></span>
+                  <h3 class="slide-title f18">Колонны</h3>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="container slide-container">
+        <h3 class="subtitle">Отделка цоколя</h3>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="decor-items text-center">
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <span class="img-wrap"><img src="img/decor-const-7.jpg" alt="const-slide"></span>
+                  <h3 class="slide-title f18">Натуральный камень</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <span class="img-wrap"><img src="img/decor-const-8.jpg" alt="const-slide"></span>
+                  <h3 class="slide-title f18">Декоративный камень</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <span class="img-wrap"><img src="img/decor-const-9.jpg" alt="const-slide"></span>
+                  <h3 class="slide-title f18">Керамическая плитка</h3>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    
+
+    
+    
+    
+    <section class="decor-text">
+      <div class="container">
+        <h2>Визуализация дома в различных вариантах отделки и цветовых решениях, с включением архитектурных элементов и без</h2>
+        <div class="row">
+          <div class="col-lg-8 f16">
+            <span class="img-wrap"><img src="img/complect-top.jpg" class="pull-left"></span>
+            <p>Наружная отделка здания как правило стоит хороших денег, делается 1 раз и навсегда, а так же вызывает большое количество споров в семье о том, какие материалы, цвета и архитектурные элементы стоит применять. Для того чтобы не ошибиться с выбором внешнего облика вашего дома, и в итоге получить наружную отделку которая понравится вам, вашим близким и будет подходить к зданию, мы рекомендуем начать отделку с ее визуализации.</p>
+            <p>Наши архитекторы сделают несколько вариантов дизайна вашего дома, выбирая из десятков видов отделочных материалов и архитектурных элементов, а вам останется сделать выбор готового решения. с учетом всех ваших пожеланий и вы увидите свой дом в законченном виде еще до начала строительных работ.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="info-box">
+              <ul class="list-purple-style">
+                <li>2 варианта по 2 цветовых решения</li>
+                <li>срок выполнения 5 дней*</li>
+              </ul>
+              <p class="price-wrap">
+                <span class="price-text">Стоимость</span>
+                <span class="price">25 000 руб.</span>
+              </p>
+              <p class="info-bot">Возвращаем 100% стоимости разработки дизайна, при заключении и оплате договора на отделочные работы с нашей компанией.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="limestone-text f16" style="border-top: none;">
+      <div class="container">
+        <div class="text-block">
+          <h2 class="sample-h2">Обязательно ли штукатурить дом под утепление?</h2>
+          <p>Тут все зависит от того каую цель вы приследуете, если вам необходимо просто сделать красивый фасад, то можно отделать дом с помощью пенопласта по штукатурным маякам без предварительного оштукатуривания здания, но тогда система утепления будет работать не на все 100% и точка росы будет возникать внутри стены. утеплитель только пенопласт потому что минеральная вата слишком тяжелая и отвалится под собственным весов, минвату надо клеить по технологи, чтоб она плотно прилегала к стене всей плоскостью.</p>
+          <p>Если ваш дом из газобетона, полистиролбетона  и стены ваши ровные, в этом случае тоже можно обойтись без предварительной штукатурки, но расход клея для монтажа пенопласта будет больше.</p>
+          <p>Штукатурка стен обеспечивает плотное прилегание утеплителя к стене, что позволяет сделать красивый фасад и грамотную теплоизоляцию.</p>
+          <p>Пенопласт или вата - уровень паропраницаемости у них практически одинаковый, что позволяет вывести точку росы на улицу и удалить влагу срок службы одинаковый у ваты расход по клею в 2 раза больше дюбеля используются с металлическим сердечником, их стоимость в 2 раза дороже стоимость монтажа дороже.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="index-construction" >
+      <div class="container slide-container">
+        <div class="row">
+          <div class="col-lg-12">      
+            <h2 class="ready-title">Посмотрите дома уже построенные нами</h2>
+
+            <div class="const-slider-2">
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_1.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Ст. Балаклава<br> (текущий проект)</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_2.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Пальмира</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_3.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Садовый домик,<br> Северная 20 км</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_4.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Дом под ключ, Гранат</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-wrapp">
+                  <img src="img/ready_5.jpg" alt="const-slide">
+                  <h3 class="slide-title f18">Частный дом, Голландия (текущий проект)</h3>
+                </div>
+              </div>
+            </div>
+            <div class="const-2-slide-paginator">
+              <ul>
+                  <li class="slide-arrow const-2-slide-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </li>
+                  <li class="slide-arrow const-2-slide-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="index-book">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="block"></div>
+          </div>
+          <div class="col-lg-4">
+            <img src="img/book.png" alt="книга" class="book-img">
+          </div>
+          <div class="col-lg-8">
+            <div class="head clearfix">
+
+              <table>
+                <tr>
+                  <td class="left">                    
+                    <h2 class="title">Как выбрать <span>участок в Крыму?</span></h2>
+                    <h3 class="subtitle f18">Книга, написанная на основании нашего опыта</h3>
+                  </td>
+                  <td>
+                    <button class="btn-prime get-book">Получить книгу</button>
+                  </td>
+                </tr>
+              </table>            
+            </div>
+
+            <p class="text">Есть общие правила выбора лучшего места под строительство дома. Эти правила подходят<br> и для людей, которые строят для себя, и для тех, кто собирается сдавать построенный дом в аренду.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block-seo" style="padding-top: 30px;">
+      <div class="container">
+        <h2 class="seo-head">Проектирование и строительство <br>домов и коттеджей</h2>
+        <div class="seo-text">
+          <p>Закажите индивидуальное проектирование загородных домов
+            в архитектурной студии «Новый Свет», и получите в качестве бонуса
+            бесплатное устройство ландшафтного дизайна!</p>
+          <p>Кроме того, у нас действует дисконтная программа, согласно которой вы
+            получаете приятные скидки на ряд других услуг (строительство, авторский
+            надзор, дизайн интерьера и т.д.), а также дисконт на покупку качественных
+            строительных материалов у наших проверенных партнеров.</p>
+          <p>Несмотря на то, что проектирование домов – очень трудоемкий процесс,
+           опытные архитекторы студии «Новый Свет» справляются с ним не просто
+           на «отлично», а безупречно. Замысловатые неординарные формы, плавные
+           линии, впечатляющие фасады – это их стихия, их призвание созидать
+           и творить прекрасное.</p>
+          <p>Требуются услуги архитектора, дизайнера или строителя?
+            Тогда мы едем к вам!</p>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container footer-top-wrap hidden-xs">
+        <div class="footer-top">
+          <ul class="pull-left f16 nav-links">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости и статьи</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Вопрос-ответ</a></li>
+            <li><a href="#">Полезная информация</a></li>
+            <li><a href="#">Контактная информация</a></li>
+          </ul>
+          <ul class="pull-right social-links">
+            <li><a href="#"><i class="fa fa-vk fa-vk-fix" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="prime-hr">
+      <div class="container">
+        <div class="footer-bot">
+          <div class="col-sm-3 working-time visible-lg">
+            <p class="f18">Офисы продаж работают:</p>
+            <ul class="f14">
+              <li>по будням с 9.30 до 18.00</li>
+              <li>в субботу с 10.00 до 16.00</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 city-data">
+            <span class="city-name f18">Севастополь</span>
+            <span class="city-phone f24">8 978 793 17 23</span>
+          </div>
+          <div class="col-lg-3 col-sm-6 city-data">
+            <span class="city-name f18">Симферополь</span>
+            <span class="city-phone f24">8 978 888 06 07</span>
+          </div>
+          <div class="col-sm-3 text-right visible-lg">
+            <button class="btn-prime get-consult">Получить консультацию</button>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="pull-left">Copyright 2017, ООО Строительная компания «Новый Свет»</p>
+          <p class="pull-right">Сделано <a href="#" class="dev-ico">SODA</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <div class="call-me-modal prime-modal modal fade" id="callMeModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <h2>Перезвоните мне</h2>
+            <div class="input-wrap">
+              <input type="text" name="" class="field" placeholder="Ваше имя">
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" class="field" placeholder="Номер телефона">
+            </div>
+            <div class="input-wrap prime-checkbox-wrap">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+            </div>
+            <button>Отправить</button>
+          </form>
+          <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="get-consult-modal prime-modal modal fade" id="getConsultModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <h2>Вам нужна подробная консультация?</h2>
+            <p class="text">Заполните форму, и наш специалист свяжется с вами в ближайшее время, чтобы ответить на интересующие вопросы</p>
+            <div class="input-wrap">
+              <input type="text" name="" class="field" placeholder="Ваше имя">
+            </div>
+            <div class="input-wrap">
+              <textarea name="" class="field" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" class="field" placeholder="Номер телефона">
+            </div>
+            <div class="input-wrap">
+              <input type="mail" name="" class="field" placeholder="Электронная почта">
+            </div>
+            <div class="input-wrap">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+            </div>
+            <button>Отправить</button>
+          </form>
+          <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+    <span id="back-to-top" href="#" class="btn back-to-top" data-placement="left"><i class="fa fa-angle-up"></i></span>
+    <span class="desktop_check-jquery visible-lg"></span>
+    <span class="tablet_check-jquery visible-sm visible-md"></span>
+    <span class="mobile_check-jquery visible-xs"></span>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+    <script>
+      $(document).ready(function(){
+          
+          $(".decor-how .item-list").matchHeight();
+          $(".decor-slider .img-wrap").matchHeight();
+      });
+        
+    </script>
+  </body>
+</html>
