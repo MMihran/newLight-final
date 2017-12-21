@@ -316,6 +316,64 @@
                 </div>
               </div>
             </div>
+            <div class="col-lg-6 contacts-city">
+              <div class="contacts-city-wrap">
+                <div class="map-wrap">
+                  <div class="text-box">
+                    <p class="city-name f24">Симферополь</p>
+                    <ul class="city-data f16">
+                      <li>ул. Киевская, д. 36/6</li>
+                      <li>8 978 886 06 07</li>
+                      <li>krmstroy@gmail.com</li>
+                    </ul>
+                    <hr class="prime-hr">
+                    <ul class="working-time">
+                      <li>По будням с 9:30 до 18:00</li>
+                      <li>Суббота с 10:00 до 15:00</li>
+                      <li>Воскресенье  <br> по договоренности</li>
+                    </ul>
+                  </div>
+                  <div id="map-simf" class="contacts-map"></div>
+                </div>
+                <div class="city-employees">
+                  <p class="f24">Отдел продаж</p>
+                  <ul class="employees-list">
+                    <li>
+                      <span class="img-wrap"><img src="img/promo/empl-5.jpg" alt=""></span>
+                      <div class="employee-about">
+                        <p class="name f18">Сергей Юнусов</p>
+                        <p class="post">менеджер</p>
+                        <p class="tel f16">8 978 456 10 09</p>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="img-wrap"><img src="img/promo/empl-6.jpg" alt=""></span>
+                      <div class="employee-about">
+                        <p class="name f18">Иван Орджоникидзе</p>
+                        <p class="post">менеджер</p>
+                        <p class="tel f16">8 978 356 00 99</p>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="img-wrap"><img src="img/promo/empl-7.jpg" alt=""></span>
+                      <div class="employee-about">
+                        <p class="name f18">Марина Захарченко </p>
+                        <p class="post">менеджер</p>
+                        <p class="tel f16">8 978 395 67 66</p>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="img-wrap"><img src="img/promo/empl-8.jpg" alt=""></span>
+                      <div class="employee-about">
+                        <p class="name f18">Антонина Константинопольская</p>
+                        <p class="post">менеджер</p>
+                        <p class="tel f16">8 978 039 95 44</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -531,13 +589,15 @@
           myMapSev = new ymaps.Map("map-sev", {
               center: [44.572819940376995,33.51506801315301],
               zoom: 15,
-              controls: []
+              controls: [],
           });
           myMapSimf = new ymaps.Map("map-simf", {
               center: [44.95417057601887,34.11047549911491],
               zoom: 15,
-              controls: []
+              controls: [],
           });
+          myMapSev.options.set('yandexMapDisablePoiInteractivity', true);
+          myMapSimf.options.set('yandexMapDisablePoiInteractivity', true);
           var myPlacemark = new ymaps.Placemark([44.954140103513794,34.11656947799677], {}, {
               iconLayout: 'default#image',
               iconImageHref: 'img/promo/placemark.png',

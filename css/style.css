@@ -129,13 +129,17 @@ a:focus{
 	text-align: center;
 }
 
+body.modal-open{
+	// padding-right: 0 !important;
+}
+
 .modal-opened-fix{
 	overflow: scroll !important;
 	padding-right: 0 !important;
 }
-.modal-open .back-to-top{
-	right: 35px;
-}
+// .modal-open .back-to-top{
+// 	right: 37px;
+// }
 /*===========
 BLOCKS
 ===========*/
@@ -388,9 +392,9 @@ HEADER_TOP
 .header .f-nav.menu-fix{
 	box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);	
 }
-.modal-open .f-nav{
-	padding-right: 17px;
-}
+// .modal-open .f-nav{
+// 	padding-right: 17px;
+// }
 /*===========
 HEADER_BOT
 ===========*/
@@ -866,6 +870,7 @@ INDEX
 
 .index-constBlocks .price{
 	padding-bottom: 30px;
+	color: #b1006b;
 }
 .index-constBlocks .price .text {
     display: inline-block;
@@ -1318,9 +1323,8 @@ INDEX
 }
 
 .index-design .slide-btn {
-    position: absolute;
-    left: -206px;
-    top: -10px;
+	vertical-align: middle;
+	margin-right: 10px;  
 	width: 190px;
 	height: 53px;
 	font-size: 16px;
@@ -1342,11 +1346,23 @@ INDEX
 	color: #f2f6f8;
 }
 
-.index-design .design-slide-paginator {
-	position: absolute;
-	top: -301px;
-	left: 220px;
+
+
+
+
+.index-design .design-slider-bot .row{
+	margin-top: -105px;
 }
+.index-design .design-slide-paginator{
+	text-align: left;
+}
+.index-design .design-slide-paginator ul{
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+
+
 
 .index-design .design-slide-prev {
 	margin-right: 10px;
@@ -2393,6 +2409,10 @@ BLOCK_SEO
 		padding-left: 15px;
 	}
 
+	.index-design .design-slider-bot .row{
+		margin-top: -80px;
+	}
+
 	.index-design .title {
 		margin-top: 53px;
 	}
@@ -2828,6 +2848,9 @@ BLOCK_SEO
 		width: 100%;
 	}
 
+	.index-design {
+		padding-bottom: 45px;
+	}
 	.index-design .col-sm-12 {
 		width: 100%;
 	}
@@ -2845,6 +2868,9 @@ BLOCK_SEO
 		display: none!important;
 	}
 
+	.index-design .design-slider-bot .row{
+		margin-top: 0;
+	}
 
 
 	.index-blocks {
@@ -4878,8 +4904,11 @@ PRIME_CLASSES
 	font-weight: normal;
 	cursor: pointer;
 }
+.info-block .input-checkbox a:hover{
+	text-decoration: underline;
+}
 .info-block .input-checkbox a:focus{
-	
+	color: #fff;
 }
 .info-block .chk-wrap span{
 	background-color: #fff;
@@ -5816,7 +5845,9 @@ CONTACTS.CSS
 ***
 ==============*/
 
-
+.contacts-page.prime-content-wrapper{
+	padding-bottom: 65px;
+}
 .contacts-page .contacts-content{
 	margin-top: 45px;
 }
@@ -5827,6 +5858,9 @@ CONTACTS.CSS
 .contacts-page .city-employees{
 	background-color: #fff;
 	padding: 25px 30px;
+}
+.contacts-page .contacts-city{
+	margin-bottom: 30px;
 }
 .contacts-page .employees-list {
 	margin-top: 20px;
@@ -6027,7 +6061,7 @@ BUILD.CSS
 }
 
 .build-terms {
-	text-align: center;
+	text-align: left;
 	padding: 99px 0;
 	background: #ffffff;
 }
@@ -6089,6 +6123,14 @@ BUILD.CSS
 	.index-book.build-book .row{
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	.build-terms .col-lg-5{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.build-terms .col-lg-5 img{
+		max-width: 100%;
 	}
 
 }
@@ -8273,6 +8315,10 @@ REG2.CSS
 	margin-bottom: 15px;
 }
 
+.reg2.block-apply-form .col-sm-7 .chk-wrap span{
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
 .reg2.block-apply-form .title-second {
 	margin-bottom: 25px;
 }
@@ -8398,7 +8444,7 @@ REG2.CSS
 	text-align: left;
 	margin-top: 25px;
 	font-size: 14px;
-	color: #ffffff;
+	color: #37474f;
 	opacity: 0.6;
 }
 
@@ -9974,16 +10020,37 @@ a:focus{
 
 #primeSliderModal img{
 	width: 100%;
-	position: static;
 	min-width: 0;
 	min-height: 0;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: auto;
+	left: auto;
+	right: auto;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	border-radius: 6px;
 }
 #primeSliderModal .project-prime-slider{
 	width: 100%;
 	max-width: none;
 	min-width: 0;
-	height: auto;
 	margin: 0;
+	border-radius: 6px;
+	height: auto;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 0 15px;
+}
+
+#primeSliderModal .modal-dialog,
+#primeSliderModal .modal-content,
+#primeSliderModal .modal-pic-wrap,
+#primeSliderModal .project-prime-slider{
+	height: 100%;
+	background: none;
+	box-shadow: none;
+	border: none;
 }
 
 

@@ -290,7 +290,7 @@
                     <h3 class="subtitle f18">Книга, написанная на основании нашего опыта</h3>
                   </td>
                   <td>
-                    <button class="btn-prime get-book">Получить книгу</button>
+                    <button class="btn-prime get-book" data-target="#get-catalog">Получить книгу</button>
                   </td>
                 </tr>
               </table>            
@@ -424,6 +424,33 @@
               </label>
             </div>
             <button>Отправить</button>
+          </form>
+          <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="call-me-modal prime-modal modal fade" id="get-catalog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <h2>Получить каталог</h2>
+            <div class="input-wrap">
+              <input type="text" name="" class="field" placeholder="Ваше имя">
+            </div>
+            <div class="input-wrap">
+              <input type="tel" name="" class="field" placeholder="Ваш телефон">
+            </div>
+            <div class="input-wrap">
+              <input type="mail" name="" class="field" placeholder="Ваш e-mail">
+            </div>
+            <div class="input-wrap prime-checkbox-wrap">
+              <label class="input-checkbox">
+                  <span class="chk-wrap"><input type="checkbox" name=""><span><i class="fa fa-check" aria-hidden="true"></i></span></span>
+                  <p>Я согласен на обработку <a href="#" target="blank">персональных данных</a></p>
+              </label>
+            </div>
+            <button>Получить каталог</button>
           </form>
           <button type="button" class="btn btn-default prime-close" data-dismiss="modal">&#215;</button>
         </div>
