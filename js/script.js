@@ -19,6 +19,32 @@ $(document).ready(function () {
 	$('#back-to-top').tooltip('show');
 
 
+	// TODO: Add any custom classes with 'position: fixed' to the selector below
+    var fixedCls = '.f-nav';
+    var fixedBtn = "#back-to-top"
+    var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
+    $.fn.modal.Constructor.prototype.setScrollbar = function () {
+        oldSSB.apply(this);
+        if (this.bodyIsOverflowing && this.scrollbarWidth)
+            $(fixedCls).css('padding-right', this.scrollbarWidth);
+            $(fixedBtn).css('right', this.scrollbarWidth + 20);
+    }
+
+    var oldRSB = $.fn.modal.Constructor.prototype.resetScrollbar;
+    $.fn.modal.Constructor.prototype.resetScrollbar = function () {
+        oldRSB.apply(this);
+        $(fixedCls).css('padding-right', '');
+        $(fixedBtn).css('right', 20);
+    }
+
+	// $(".modal").on("show.bs.modal", function(){
+	// 	console.log($("body").attr("cz-shortcut-listen"));
+	// 	$("body").one("style", function(e){
+	// 		var padVal = parseInt($("body").css("padding-right"));				
+	// 		$('#back-to-top').css("right", (20+padVal) + "px");
+	// 		console.log(e);
+	// 	});
+	// })
 	// if ($(".modal-slider").height()) {}
 	
 
@@ -290,11 +316,14 @@ $(document).ready(function () {
 		src = $(this).attr("src");
 		$('#primeSliderModal img').attr("src", src);
 		$('#primeSliderModal').modal('show');
+		// $('#primeSliderModal .modal-dialog').css("max-height", $(this).height());
 	});
 
-	$("[data-target='#get-catalog'], [data-target='#callMeModal'], [data-target='#check-list'], [data-target='#getConsultModal']").click(function(e){
+	$("[data-target*='#']").click(function(e){
 		var id = $(this).attr("data-target");
-		$(id).modal('show');
+		if ($(id).hasClass("modal")) {
+			$(id).modal('show');
+		}
 	});
 
 
