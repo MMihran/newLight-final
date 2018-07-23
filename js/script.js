@@ -270,8 +270,8 @@ $(document).ready(function () {
 
 
 	$('.main-slider').slick({
-		autoplay: true,
-  		autoplaySpeed: 3000,
+		// autoplay: true,
+  		// autoplaySpeed: 3000,
 		prevArrow: $('.slide-prev'),
 	  	nextArrow: $('.slide-next'),
 	});
@@ -301,15 +301,41 @@ $(document).ready(function () {
 	  $('.const-slider-2, .const-slider, .design-slider, .about-slider').slick('resize');
 	});
 
-
-	/*INDEX SCRIPTS*/
-
 	$("[data-target='#layoutModal']").click(function(e){
-		e.preventDefault();
 		src = $(this).children("img").attr("src");
 		$('#layoutModal img').attr("src", src);
 		$('#layoutModal').modal('show');
 	});
+	/*INDEX SCRIPTS*/
+	(function layoutSlider(){
+		console.log($("#layout-modal .modal-content"));
+		$("#layoutModal .modal-content").append('<div class="arrows"><span class="next"></span><span class="prev"></span></div>');
+		var layoutArr;
+		var curr;
+		$("[data-target='#layoutModal']").click(function(e){
+			layoutArr = $.makeArray($("[data-target='#layoutModal']"));
+			curr = $.inArray($(this)[0],layoutArr);
+			
+			
+		});
+		$('#layoutModal .next').click(function(e){
+			if (curr==layoutArr.length-1) {
+				curr=0;
+			}else{
+				curr++;
+			}
+			layoutArr[curr].click();
+		});
+		$('#layoutModal .prev').click(function(e){
+			if (curr==0) {
+				curr=layoutArr.length-1;
+			}else{
+				curr--;
+			}
+			layoutArr[curr].click();
+		});
+	}());
+
 
 	$("[data-target='#primeSliderModal']").click(function(e){
 		e.preventDefault();
@@ -359,7 +385,9 @@ $(document).ready(function () {
 		$(this).siblings("ul").stop().slideToggle();
 	});
 
-
+	$('.video-modal').on('show.bs.modal', function(){
+		$(".modal-backdrop.in").addClass("black-bg");
+	})
     $('.video-modal').on('hide.bs.modal', function (e) {
 	  $(this).find("iframe").attr("src", " ");
 	  console.log("hello");
@@ -707,7 +735,11 @@ $(document).ready(function () {
         privateMobSliders();
 
 
-
+		$(".article-slider .nav-slides").on("init", function(event,slick){
+			if (slick.$slides.length == 1) {
+				$(this).parent().hide();
+			}
+		})
 
         //PRIVATE EXAMPLES MODAL
         $("[data-target='#examples-modal']").click(function(e){
@@ -759,6 +791,8 @@ $(document).ready(function () {
             albumTimeout = setTimeout(runExamplesModal, 500);
           });
 
+
+// $('input[name=phone]').inputmask("+7(999)-999-99-99");
 
 
 });

@@ -209,7 +209,7 @@
           
           
          
-          <div class="cart-sliders">
+          <div class="cart-sliders side-controls">
             <div class="sliders-wrap">
               <div class="private-prime-slider project-prime-slider" id="private-prime-proj">
                 <img src="img/cart-slider.jpg" alt="" data-target="#primeSliderModal">
@@ -223,9 +223,21 @@
                   <div><img src="img/private-s4.jpg" alt=""></div>
                   <div><img src="img/private-s6.jpg" alt=""></div>
                 </div>
+                <div class="controls">
+                  <span class="nav-prev"></span>
+                  <span class="nav-next"></span>
+                </div>
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
            <div class="pCart-info">
               <div class="info-wrap">
                 <div class="info-area">
@@ -744,6 +756,10 @@
             <div class="modal-pic-wrap">
               <img src="" alt="">
             </div>
+            <!-- <div class="arrows">
+              <span class="next"></span>
+              <span class="prev"></span>
+            </div> -->
           <button type="button" class="btn btn-default modal-close" data-dismiss="modal">&#215;</button>
         </div>
       </div>
@@ -884,17 +900,29 @@
             ]
           });
           var privNavSlider = $(nav + " .nav-slides").slick({
-            arrows:false,
+            // arrows:false,
             dots:false,
             infinite: true,
-            arrows: true,
+            nextArrow: $(nav + " .nav-next"),
+            prevArrow: $(nav + " .nav-prev"),
             asNavFor: opt,
             slidesToScroll: 1,
-            centerMode: true,
+            slidesToShow: 5,
             speed: 400,
             focusOnSelect: true,
             variableWidth: true,
             infinite: true,
+            responsive: [
+              {
+                breakpoint: 1200,
+                settings:{
+                  slidesToShow: 3,
+                  adaptiveHeight: true,
+                  swipeToSlide: true,
+                  touchThreshold: 20
+                }
+              }
+            ]
           });
           privNavSlider.on("beforeChange", function(e, slick, curr, next){
             console.log("curr");

@@ -995,7 +995,7 @@
            линии, впечатляющие фасады – это их стихия, их призвание созидать
            и творить прекрасное.</p>
           <p>Требуются услуги архитектора, дизайнера или строителя?
-            Тогда мы едем к вам!</p>
+            Тогда мы едем к вам! </p>
         </div>
       </div>
     </section>
@@ -1194,8 +1194,9 @@
 
         $("body").on("click", ".private-faq .nav-tabs-wrap li a", function(e){
           if ($(".mobile_check-jquery").is(":visible")) {
-            var index = $(this).parent().index();
             var slider = $(".private-faq .nav-tabs-wrap .nav-tabs");
+            if (slider.children().length<=2) return;
+            var index = $(this).parent().index();
             slider.css("transition", "all 1s");
             
             if (index == (slider.children().length - 1)) {
